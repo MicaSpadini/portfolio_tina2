@@ -1,14 +1,180 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>meu-site</title>
-    <script type="module" crossorigin src="/assets/index-DWyDJMmB.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-COcDBgFa.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="csrf-token" content="C3VdDhQoOTo_N0J0XAcsMChiBmwmUCQML-l7pMxMnV-DqrkcDRPXLfsh">
+    <title>Mocha</title>
+    <meta name="title" content="Mocha">
+    <meta name="description" content="AI-powered no‑code app builder">
+    <meta name="og:title" content="Mocha">
+    <meta property="og:description" content="AI-powered no‑code app builder">
+    <meta name="facebook-domain-verification" content="fot7qlgw3bdraticyzp6ftjjhvg57q">
+    <meta name="keywords" content="ai website builder,ai app builder,no code app builder,build app with ai,mocha app builder,ai developer assistant,full stack development,product engineering,ai coding assistant,build website instantly,learn to code with ai,web application development,ai powered development,software prototyping,app idea to reality,web agency automation,mocha,getmocha,mocha app, mocha website, mocha ai, mocha ai website builder, mocha ai app builder">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=X-CSYlBpfU9yfZdO867n6_q-NsTZDoOMv5tS0uOGmBkUl27TjWKVX0yxn6KvABHopiFEca82h1dNCCh9byJGumZKPrzIgGfvdEm3hxSNzas" charset="UTF-8"></script><script>
+      window.sentryOnLoad = function () {
+        Sentry.init({
+          tracesSampleRate: 1.0,
+          tracePropagationTargets: ['https://getmocha.com'],
+          denyUrls: ['https://tunafish.getmocha.com'],
+          ignoreErrors: ['Resource not found'],
+          replaysSessionSampleRate: 0,
+          replaysOnErrorSampleRate: 0.8,
+          environment: "prod",
+          enabled: true,
+        });
+      };
+    </script>
+    <script src="https://js.sentry-cdn.com/a91236e3795536800fec594f206e316c.min.js" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      // Attempt to detect asset load failures and report them to PostHog
+      (function () {
+        const KEY = "mocha:asset_errors";
+        const EVENT_NAME = "asset_load_error";
+
+        // Can add LINK and IMG if we want to track those too
+        const TAGS = ["SCRIPT"];
+
+        window.__sendPostHogAssetFailures = __sendPostHogAssetFailures;
+        window.__posthogCapture = __posthogCapture;
+
+        function __sendPostHogAssetFailures() {
+          try {
+            const errors = JSON.parse(localStorage.getItem(KEY) || "[]");
+            const hasErrors = Array.isArray(errors) && errors.length > 0;
+
+            if (!hasErrors) {
+              return;
+            }
+
+            errors.forEach((error) => {
+              __posthogCapture(EVENT_NAME, error);
+            });
+
+            localStorage.removeItem(KEY);
+          } catch (err) {
+            console.error("Failed to send asset load errors to PostHog:", err);
+          }
+        }
+
+        function __posthogCapture(eventName, eventProps) {
+          if (window.posthog) {
+            let userId = null;
+
+            try {
+              const reactRoot = document.getElementById("react-root");
+              if (reactRoot) {
+                const userJson = reactRoot.getAttribute("data-user");
+                userId = (userJson ? JSON.parse(userJson) : {}).id || null;
+              }
+            } catch (_error) {
+              // no-op
+            }
+
+            posthog.capture(eventName, { userId, ...eventProps });
+          }
+        }
+
+        window.addEventListener(
+          "error",
+          function (e) {
+            if (e.target !== window && TAGS.includes(e.target.tagName)) {
+              const srcUrl = e.target.src || e.target.href;
+              const assetError = {
+                errorType: e.type,
+                errorMessage: e.message,
+                src: srcUrl,
+                tag: e.target.tagName,
+                currentSrc: e.target.currentSrc || null,
+                userAgent: navigator.userAgent,
+                timestamp: new Date().toISOString(),
+              };
+              try {
+                const errors = JSON.parse(localStorage.getItem(KEY) || "[]");
+                errors.push(assetError);
+                localStorage.setItem(KEY, JSON.stringify(errors));
+                setTimeout(__sendPostHogAssetFailures, 0);
+              } catch (err) {
+                console.error("Failed to log asset load error:", err);
+              }
+            }
+          },
+          true
+        );
+      })();
+    </script>
+
+    
+    
+    <link rel="stylesheet" phx-track-static href="https://static.getmocha.com/assets/app-BlR9qb05.css"/><script type="module" phx-track-static crossorigin src="https://static.getmocha.com/assets/app-DDet169P.js"></script>
+    <!-- Open Graph metadata -->
+    <meta property="og:image" content="https://static.getmocha.com/og.png">
+    <meta property="og:image:alt" content="Mocha - AI-Powered No-Code App Builder">
+    <meta property="og:url" content="https://getmocha.com/apps/019c9043-39db-75c6-9d5b-ac7dbc7f1848">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mocha">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:site" content="@get_mocha">
+    <link rel="canonical" href="https://getmocha.com/apps/019c9043-39db-75c6-9d5b-ac7dbc7f1848">
+    <link rel="icon" type="image/png" href="https://static.getmocha.com/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="https://static.getmocha.com/favicon.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="https://static.getmocha.com/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-title" content="Mocha">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://static.getmocha.com/apple-touch-icon.png" type="image/png">
+    <script defer data-domain="getmocha.com" src="https://plausible.io/js/script.js">
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17027636025">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17027636025');
+    </script>
+    <script>
+      (function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');
+    </script>
+    <script async src="https://r.wdfl.co/rw.js" data-rewardful="fe36ce">
+    </script>
+    <!-- Twitter conversion tracking base code -->
+    <script>
+      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      twq('config','qby92');
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1898703474327898');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1898703474327898&ev=PageView&noscript=1">
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="bg-background text-foreground">
+    <div id="react-root" data-user="{&quot;id&quot;:&quot;019c9043-37f1-7b4f-a6a2-4b2d8c257544&quot;,&quot;status&quot;:&quot;active&quot;,&quot;features&quot;:[],&quot;email&quot;:&quot;michelefspadini97@gmail.com&quot;,&quot;updated_at&quot;:&quot;2026-02-24T15:40:31Z&quot;,&quot;display_name&quot;:&quot;MicaSpadini&quot;,&quot;created_at&quot;:&quot;2026-02-24T15:27:30Z&quot;,&quot;browser_translation&quot;:false,&quot;desktop_notifications&quot;:false,&quot;last_signed_in_at&quot;:&quot;2026-02-24T15:27:30Z&quot;,&quot;profile_metadata&quot;:{&quot;attribution_source&quot;:&quot;Google search&quot;,&quot;coding_experience&quot;:&quot;I know a little coding&quot;,&quot;project_description&quot;:&quot;Just exploring&quot;,&quot;role&quot;:&quot;Student&quot;,&quot;team_size&quot;:&quot;Just me&quot;},&quot;provider&quot;:&quot;github&quot;,&quot;sound_notifications&quot;:true,&quot;admin&quot;:false,&quot;image_url&quot;:&quot;https://avatars.githubusercontent.com/u/102698058?v=4&quot;}" data-organization="{&quot;id&quot;:&quot;019c9043-3856-767a-8847-89ec4ebc9f45&quot;,&quot;updated_at&quot;:&quot;2026-02-24T15:53:24Z&quot;,&quot;display_name&quot;:&quot;Personal&quot;,&quot;created_at&quot;:&quot;2026-02-24T15:27:30Z&quot;,&quot;tier&quot;:&quot;free&quot;,&quot;credits&quot;:50,&quot;subscription_credits&quot;:0}" data-tiers="[{&quot;id&quot;:&quot;free&quot;,&quot;monthly_credit_limit&quot;:0,&quot;monthly_email_limit&quot;:10,&quot;custom_domain_limit&quot;:0,&quot;deployed_app_limit&quot;:1,&quot;analytics_data_retention_days&quot;:1,&quot;credit_bundle_max_quantity&quot;:0,&quot;monthly_cost_cents&quot;:null,&quot;monthly_credit_bundle_cost_cents&quot;:null,&quot;project_size_limit&quot;:140000,&quot;yearly_cost_cents&quot;:null},{&quot;id&quot;:&quot;bronze&quot;,&quot;monthly_credit_limit&quot;:1500,&quot;monthly_email_limit&quot;:500,&quot;custom_domain_limit&quot;:5,&quot;deployed_app_limit&quot;:5,&quot;analytics_data_retention_days&quot;:14,&quot;credit_bundle_max_quantity&quot;:1,&quot;monthly_cost_cents&quot;:2000,&quot;monthly_credit_bundle_cost_cents&quot;:2000,&quot;project_size_limit&quot;:500000,&quot;yearly_cost_cents&quot;:22000},{&quot;id&quot;:&quot;silver&quot;,&quot;monthly_credit_limit&quot;:4500,&quot;monthly_email_limit&quot;:2500,&quot;custom_domain_limit&quot;:15,&quot;deployed_app_limit&quot;:15,&quot;analytics_data_retention_days&quot;:60,&quot;credit_bundle_max_quantity&quot;:10,&quot;monthly_cost_cents&quot;:5000,&quot;monthly_credit_bundle_cost_cents&quot;:1500,&quot;project_size_limit&quot;:4000000,&quot;yearly_cost_cents&quot;:55000},{&quot;id&quot;:&quot;gold&quot;,&quot;monthly_credit_limit&quot;:20000,&quot;monthly_email_limit&quot;:10000,&quot;custom_domain_limit&quot;:25,&quot;deployed_app_limit&quot;:25,&quot;analytics_data_retention_days&quot;:730,&quot;credit_bundle_max_quantity&quot;:30,&quot;monthly_cost_cents&quot;:20000,&quot;monthly_credit_bundle_cost_cents&quot;:1425,&quot;project_size_limit&quot;:&quot;infinity&quot;,&quot;yearly_cost_cents&quot;:210000}]" data-domain="mocha.app" data-flash="{}">
+</div>
+
+    <script>
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('phc_Rj1G8UcnU4nfsogx5TiIZzWeGrJsaC2OqcJdl4q2tMp',{api_host:'https://tunafish.getmocha.com', person_profiles: 'identified_only', ui_host:'https://us.posthog.com'})
+      __sendPostHogAssetFailures();
+    </script>
   </body>
 </html>
